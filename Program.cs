@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Numerics;
@@ -14,7 +14,7 @@ namespace Lab1
         static void Main()
         {
             //1. V2DataArray
-            V2DataArray arr = new V2DataArray("Object", new DateTime(2021, 01, 01), 5, 2, new Vector2(1.8f, 1.5f), F1);
+            V2DataArray arr = new V2DataArray("Object", new DateTime(2021, 01, 01), 3, 2, new Vector2(1.8f, 1.5f), F1);
             Console.WriteLine(arr.ToLongString("N1"));
             V2DataList list = arr;
             Console.WriteLine(list.ToLongString("N1"));
@@ -23,8 +23,8 @@ namespace Lab1
 
             //2. V2MainCollection
             V2MainCollection collection = new V2MainCollection();
-            V2DataArray arr2 = new V2DataArray("Object2", new DateTime(2021, 01, 01), 2, 2, new Vector2(0.5f, 1.15f), F1);
-            V2DataList list2 = arr2;
+            V2DataArray arr2 = new V2DataArray("Object2_2", new DateTime(2021, 01, 01), 2, 0, new Vector2(0.5f, 1.15f), F1);
+            V2DataList list2 = new V2DataList("List", new DateTime(2021, 01, 01));
             collection.Add(arr);
             collection.Add(arr2);
             collection.Add(list);
