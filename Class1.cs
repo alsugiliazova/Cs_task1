@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Numerics;
@@ -96,6 +96,7 @@ namespace Lab1
                             min_distance = cur_distance;
                         }
                     }
+                if (Count == 0 || Count == 1) min_distance = 0;
                 return min_distance;
             }
         }
@@ -152,6 +153,7 @@ namespace Lab1
                 min_distance = Math.Min(nxy.X, nxy.Y);
                 if (nx == 1) min_distance = nxy.Y;
                 if (ny == 1) min_distance = nxy.X;
+                if (Count == 0 || Count == 1) min_distance = 0;
                 return min_distance;
             }
         }
